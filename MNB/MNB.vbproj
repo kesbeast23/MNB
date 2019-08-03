@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C045D05-B658-4679-B9E2-0EDBD27AAD59}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MNB.My.MyApplication</StartupObject>
+    <RootNamespace>MNB</RootNamespace>
+    <AssemblyName>MNB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MNB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MNB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbdominalCramps.Designer.vb">
+      <DependentUpon>AbdominalCramps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AbdominalCramps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aggression.Designer.vb">
+      <DependentUpon>Aggression.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Aggression.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anorexia.Designer.vb">
+      <DependentUpon>Anorexia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anorexia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BadBreath.Designer.vb">
+      <DependentUpon>BadBreath.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BadBreath.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bloody_stool.Designer.vb">
+      <DependentUpon>Bloody_stool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bloody_stool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bloody_urine.Designer.vb">
+      <DependentUpon>Bloody_urine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bloody_urine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_drooling.Designer.vb">
+      <DependentUpon>Cat_drooling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_drooling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_Hairloss.Designer.vb">
+      <DependentUpon>Cat_Hairloss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_Hairloss.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_nasal_discharge.Designer.vb">
+      <DependentUpon>Cat_nasal_discharge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_nasal_discharge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_nervous.Designer.vb">
+      <DependentUpon>Cat_nervous.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_nervous.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_seizures.Designer.vb">
+      <DependentUpon>Cat_seizures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_seizures.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_sneezing.Designer.vb">
+      <DependentUpon>Cat_sneezing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_sneezing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_weightloss.Designer.vb">
+      <DependentUpon>Cat_weightloss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_weightloss.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Constipation.Designer.vb">
+      <DependentUpon>Constipation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Constipation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coughing.Designer.vb">
+      <DependentUpon>Coughing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Coughing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depression.Designer.vb">
+      <DependentUpon>Depression.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Depression.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosis.Designer.vb">
+      <DependentUpon>Diagnosis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diarrhoea.Designer.vb">
+      <DependentUpon>Diarrhoea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Diarrhoea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dog_vomiting.Designer.vb">
+      <DependentUpon>Dog_vomiting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dog_vomiting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drooling_excessive.Designer.vb">
+      <DependentUpon>Drooling_excessive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Drooling_excessive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excessive_drinking.Designer.vb">
+      <DependentUpon>Excessive_drinking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Excessive_drinking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excessive_licking_and_Chewing.Designer.vb">
+      <DependentUpon>Excessive_licking_and_Chewing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Excessive_licking_and_Chewing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatigue.Designer.vb">
+      <DependentUpon>Fatigue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fatigue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fever.Designer.vb">
+      <DependentUpon>fever.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fever.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hair_loss.Designer.vb">
+      <DependentUpon>Hair_loss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hair_loss.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Itching.Designer.vb">
+      <DependentUpon>Itching.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Itching.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Nasal_Congestion.Designer.vb">
+      <DependentUpon>Nasal_Congestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nasal_Congestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painting_excessive.Designer.vb">
+      <DependentUpon>Painting_excessive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Painting_excessive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pet.Designer.vb">
+      <DependentUpon>Pet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StiffNeck.Designer.vb">
+      <DependentUpon>StiffNeck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StiffNeck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Swollen_lymph_nodes.Designer.vb">
+      <DependentUpon>Swollen_lymph_nodes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Swollen_lymph_nodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vomit.Designer.vb">
+      <DependentUpon>Vomit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vomit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vomiting.Designer.vb">
+      <DependentUpon>Vomiting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vomiting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbdominalCramps.resx">
+      <DependentUpon>AbdominalCramps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aggression.resx">
+      <DependentUpon>Aggression.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anorexia.resx">
+      <DependentUpon>Anorexia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BadBreath.resx">
+      <DependentUpon>BadBreath.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bloody_stool.resx">
+      <DependentUpon>Bloody_stool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bloody_urine.resx">
+      <DependentUpon>Bloody_urine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_drooling.resx">
+      <DependentUpon>Cat_drooling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_Hairloss.resx">
+      <DependentUpon>Cat_Hairloss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_nasal_discharge.resx">
+      <DependentUpon>Cat_nasal_discharge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_nervous.resx">
+      <DependentUpon>Cat_nervous.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_seizures.resx">
+      <DependentUpon>Cat_seizures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_sneezing.resx">
+      <DependentUpon>Cat_sneezing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_weightloss.resx">
+      <DependentUpon>Cat_weightloss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Constipation.resx">
+      <DependentUpon>Constipation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coughing.resx">
+      <DependentUpon>Coughing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depression.resx">
+      <DependentUpon>Depression.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis.resx">
+      <DependentUpon>Diagnosis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diarrhoea.resx">
+      <DependentUpon>Diarrhoea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dog_vomiting.resx">
+      <DependentUpon>Dog_vomiting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drooling_excessive.resx">
+      <DependentUpon>Drooling_excessive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excessive_drinking.resx">
+      <DependentUpon>Excessive_drinking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excessive_licking_and_Chewing.resx">
+      <DependentUpon>Excessive_licking_and_Chewing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatigue.resx">
+      <DependentUpon>Fatigue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fever.resx">
+      <DependentUpon>fever.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hair_loss.resx">
+      <DependentUpon>Hair_loss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Itching.resx">
+      <DependentUpon>Itching.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nasal_Congestion.resx">
+      <DependentUpon>Nasal_Congestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painting_excessive.resx">
+      <DependentUpon>Painting_excessive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pet.resx">
+      <DependentUpon>Pet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StiffNeck.resx">
+      <DependentUpon>StiffNeck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Swollen_lymph_nodes.resx">
+      <DependentUpon>Swollen_lymph_nodes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vomit.resx">
+      <DependentUpon>Vomit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vomiting.resx">
+      <DependentUpon>Vomiting.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4214.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ad - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ar - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\as - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\as.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc b - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dc - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DD - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfsf - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\er - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fgh - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gf - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gvjv - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hjghgc - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j,.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jgm n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnjb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ngh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\we.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\werw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zcx.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
